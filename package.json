@@ -4,7 +4,6 @@
     "start": "node index.js"
   },
   "devDependencies": {
-    "awesome-lint": "^0.10.0"
   },
   "name": "awesome-juggling-master",
   "description": "Awesome Juggling [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
