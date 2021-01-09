@@ -6,9 +6,9 @@ var MarkdownIt = require('markdown-it'),
 
 const server = http.createServer(function(request, response) {
   fs.readFile('readme.md', function(err, data) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(md.render(data));
-    return res.end();
+    response.writeHead(200, {'Content-Type': 'text/html'});
+    response.write(md.render(data.toString()));
+    return response.end();
   });
 });
 
